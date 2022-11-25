@@ -1,0 +1,95 @@
+p{
+    margin: 0!important;
+}
+a{
+    color: #2BB7DA!important;
+    text-decoration: none!important;
+}
+.pointer{
+    cursor: pointer!important;
+}
+.inputs p {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.0015em;
+    color: #4F4F4F;
+    align-items: center;
+    margin-bottom: 0 !important;
+    display: flex;
+}
+.inputs svg {
+    color: #4F4F4F;
+}
+.inputs .box {
+    width: 100%;
+    height: 48px;
+    left: 658px;
+    top: 550px;
+    border: 1.5px dashed #979797;
+    border-radius: 5px;
+    margin: 0;
+}
+.inputs .box div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.inputs .box input{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    top: 0;
+}
+.document_heading p {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    color: #000000;
+}
+.document_heading svg {
+    color:  #0D0D0D;
+}
+@media only screen and (min-width: 577px) and (max-width: 750px) {
+    .inputs p {
+        font-size: 12px;
+    }
+    .box p{
+        font-size: 9.5px;
+    }
+    .inputs svg {
+        width: 15px;
+    }
+}
+@media only screen and  (max-width: 577px) {
+    .inputs p {
+        font-size: 12px;
+    }
+    .inputs  {
+        margin-bottom: 15px;
+    }
+    .inputs svg {
+        width: 17px;
+    }
+    .add_btn {
+        align-items: center;
+        height: 42px;
+        padding-left: 5px !important;
+    }
+    .margin_bottom20px{
+        margin-bottom: 0;
+    }
+}
+@media only screen and  (max-width: 471px) {
+    .margin_bottom20px{
+        margin-bottom: 20px;
+    }
+}

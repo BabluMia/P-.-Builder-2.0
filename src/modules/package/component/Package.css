@@ -1,0 +1,118 @@
+.arrow-icon {
+  position: absolute;
+  right: 30px;
+  top: 12px;
+}
+.gender_item_container {
+  width: 33%;
+}
+.userRadiobtn {
+  height: 20px !important;
+  margin-right: 9px;
+  width: 20px !important;
+}
+.black_input {
+  accent-color: #000;
+}
+.file-input {
+  height: 100%;
+  height: 100%;
+  cursor: pointer;
+  opacity: 0;
+  position: absolute;
+}
+.file-input :hover {
+  background: #ccc;
+}
+.uploaded-img {
+  height: 100px !important;
+}
+.file-uploader-mask {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  /* // width: 50%; */
+  height: 180px;
+  border: 1px dashed #bdbdbd;
+  border-radius: 4px;
+
+  font-weight: 400;
+  font-size: 23px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.file-uploader-icon {
+  width: 35px !important;
+  height: 35px !important;
+}
+.progress-bar {
+  background-color: #1e2553 !important;
+}
+.chooseFile {
+  padding: 12px 40px;
+  background: #f2f2f2;
+  border: none;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #bdbdbd;
+}
+.drag-drop {
+  font-weight: 400;
+  font-size: 16px;
+  color: #bdbdbd;
+}
+.cancel_btn {
+  border: 1px solid #ebe4e4;
+  background: white;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: #333333;
+  padding: 15px 40px;
+}
+.details_img img {
+  width: 100%;
+  height: auto;
+
+  aspect-ratio: attr(width) / attr(height);
+  object-fit: cover;
+  border: 0.5px solid #f2f2fb;
+  border-radius: 4px;
+}
+.package-info {
+  margin-top: 18px;
+  text-align: center;
+}
+.package-info h3 {
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 26px;
+  color: #1c1c1c;
+}
+.package-info h4 {
+  font-weight: 400;
+  font-size: 19px;
+
+  color: #aeaeb2;
+}
+.package-info p {
+  font-weight: 400;
+  font-size: 14px;
+
+  color: #1c1c1c;
+}
+.editor-div {
+  /* overflow-y: scroll; */
+  background: #ffffff;
+  border: 1.5px solid #d1d1e1;
+  border-radius: 8px;
+  /* height: 181px; */
+}
+.rdw-editor-main{
+  overflow-y: scroll !important;
+  height: 181px !important;
+}
