@@ -1,0 +1,25 @@
+.div-loader2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-load {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 250px 0px;
+}
+.arrow_is_active {
+  color: #8f9197;
+}
+
+.is_active_page {
+  background-color: #6e79e9 !important;
+}
+.pointer {
+  cursor: pointer;
+}
+
+.is_active_page span {
+  color: white !important;
+}
