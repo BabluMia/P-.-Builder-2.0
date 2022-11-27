@@ -1,0 +1,27 @@
+.slick-dots {
+    bottom: 6px;
+  }
+  .slick-dots li.slick-active button::before {
+    color: black !important;
+  }
+  
+  .slick-dots li button::before {
+    color: black !important;
+  }
+  
+  .slick-next {
+    right: 10px;
+    background:  rgb(90, 87, 87) !important;
+    border-radius: 7px;
+    padding-top: 1px;
+
+  }
+  
+  .slick-prev {
+    left: 10px;
+    z-index: 2;
+    background:  rgb(90, 87, 87) !important;
+    border-radius: 7px;
+    padding-top: 1px;
+
+  }
