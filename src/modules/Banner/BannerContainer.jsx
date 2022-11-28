@@ -1,56 +1,22 @@
 import React, { useState } from "react";
-import { handleInputs } from "../Const/HandleInputs";
-import BannerDesgin from "./BannerDesgin";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import { handleInputs } from "../Helpers/HandleInputs";
 import banner from "../../assets/Images/banner 1.png";
 import banner2 from "../../assets/Images/banner2.png";
 import "./Banner.css";
 import swal from "sweetalert";
-import BannerDesgin2 from "./BannerDesgin2";
+import SelectedTemplate from "./Themes/SelectedTemplate";
+import "./Banner.css";
+import BannerSlider from "./Slider/BannerSlider";
 
 const BannerContainer = () => {
-  const [desgin, setDesgin] = useState(1);
+  const [design, setdesign] = useState(1);
   const [data, setData] = useState({
     heading: `Hi, I'm John Deo.`,
     data: `A freelance Web developer from London. I convert custom web
     designs to bootstrap templates.`,
     btnText: `I'M AVAILABLE`,
   });
-  const settings = {
-    dots: true,
-    infinite: false,
-    speed: 500,
-    slidesToShow: 2,
-    slidesToScroll: 2,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
-          infinite: true,
-          dots: true,
-        },
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          initialSlide: 2,
-        },
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
-      },
-    ],
-  };
+
   const banners = [
     {
       id: 1,
@@ -65,24 +31,13 @@ const BannerContainer = () => {
       img: banner2,
     },
   ];
+
   return (
     <div>
       <div>
-        <div style={{ maxWidth: "78vw " }} className="mt-4 px-3">
-          {/* slider */}
-          <Slider {...settings}>
-            {banners.map((image) => (
-              <div key={image.id} onClick={() => setDesgin(image.id)}>
-                <img className="img-fluid" src={image.img} alt="" />
-              </div>
-            ))}
-          </Slider>
-        </div>
+        <BannerSlider banners={banners} setdesign={setdesign} />
       </div>
-      {/* <BannerDesgin data={data} /> */}
-      {desgin === 1 && <BannerDesgin data={data} />}
-      {desgin === 2 && <BannerDesgin2 data={data} />}
-
+      <SelectedTemplate data={data} design={design} />
       <div>
         <div className="box-wrapper">
           <div className="d-flex align-items-center gap-3 package-head">
