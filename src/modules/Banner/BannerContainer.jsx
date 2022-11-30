@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import { handleInputs } from "../Helpers/HandleInputs";
-import banner from "../../assets/Images/banner 1.png";
-import banner2 from "../../assets/Images/banner2.png";
+import banner from "../../assets/Images/banner/banner1.png";
+import banner2 from "../../assets/Images/banner/banner2.png";
+import banner3 from "../../assets/Images/banner/banner3.png";
 import "./Banner.css";
 import swal from "sweetalert";
-import SelectedTemplate from "./Themes/SelectedTemplate";
+import SelectedBanner from "./Themes/SelectedBanner";
 import "./Banner.css";
 import BannerSlider from "./Slider/BannerSlider";
 
@@ -28,7 +29,7 @@ const BannerContainer = () => {
     },
     {
       id: 3,
-      img: banner2,
+      img: banner3,
     },
   ];
 
@@ -37,7 +38,7 @@ const BannerContainer = () => {
       <div>
         <BannerSlider banners={banners} setdesign={setdesign} />
       </div>
-      <SelectedTemplate data={data} design={design} />
+      <SelectedBanner data={data} design={design} />
       <div>
         <div className="box-wrapper">
           <div className="d-flex align-items-center gap-3 package-head">
