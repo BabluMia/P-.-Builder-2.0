@@ -10,12 +10,13 @@ const Dashboard = () => {
     btnText: `I'M AVAILABLE`,
   });
 
+  const color = "red"
   return (
     <>
       <div className="dashboard_container">
         <div className="my-3 preview_icon">Preview</div>
         <Navbar />
-        <SelectedBanner data={data} design={3} />
+        <SelectedBanner data={data} design={1} color={color} />
       </div>
     </>
   );

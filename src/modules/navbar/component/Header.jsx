@@ -139,6 +139,14 @@ const Header = ({ setBodyWidth }) => {
     SetShownotification(null);
   };
 
+
+  const Dologout = () => {
+    alert("logout");
+    localStorage.removeItem("is_logged_in")
+    localStorage.removeItem("access_token");
+    localStorage.removeItem("userData");
+    history.push("/login");
+  }
   return (
     <div className="topbar">
       <div className="topbarWrapper d-flex align-items-center justify-content-between gap-3">
@@ -480,7 +488,7 @@ const Header = ({ setBodyWidth }) => {
                   </ListItemIcon>
                   Settings
                 </MenuItem>
-                <MenuItem onClick={() => history.push(`/`)}>
+                <MenuItem onClick={Dologout}>
                   <ListItemIcon>
                     <Logout fontSize="small" />
                   </ListItemIcon>

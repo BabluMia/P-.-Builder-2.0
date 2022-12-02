@@ -38,6 +38,7 @@ import AddUserContainer from "./modules/user/component/add_user/AddUserContainer
 import NotificationList from "./modules/notification/component/NotificationList";
 import ViewUser from "./modules/navbar/component/ViewUser";
 import BannerContainer from "./modules/Banner/BannerContainer";
+import LandingPage from "./modules/LandingPage/LandingPage";
 
 function App() {
   const [bodyWidth, setBodyWidth] = useState(false);
@@ -58,6 +59,9 @@ function App() {
           <div>
             <Switch>
               <Route exact path="/">
+                <LandingPage setHideToolbar={setHideToolbar} />
+              </Route>
+              <Route exact path="/login">
                 <Login setHideToolbar={setHideToolbar} />
               </Route>
               <Route exact path="/alluser">
